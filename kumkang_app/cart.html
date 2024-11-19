@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .cont_wrap{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            width: 100%;
+            height: calc(100% - 60px);
+        }
+        .cont_1, .cont_2{
+            width: 100%;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        .tit{
+            width: 100%;
+            
+        }
+        .tit p{
+            text-align: start;
+            font-size: 50px;
+            filter: drop-shadow(1px 1px 1px #9A2828);
+            margin-left: 0;
+        }
+        .con_box{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .in_box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .in_con{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            box-sizing: border-box;
+            border-bottom: 1px solid;
+        }
+        .in_con li:first-child{
+            margin-left: 0;
+            width: 22px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .in_con li:nth-child(4){
+            margin-right: 0;
+            margin-left: auto;
+            width: 22px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .in_img{
+            width: 65px;
+            height: 65px;
+            margin: 0 30px;
+            border: 1px solid gray;
+        }
+        .in_text{
+            font-size: 14px;
+        }
+        .in_text>p:first-child,.in_text>span{
+            font-weight: 800;
+        }
+        .in_text>span{
+            color: gray;
+            text-decoration: line-through;
+        }
+        .in_text>span:last-child{
+            color: #A71C20;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+
+        .cart_txt{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 20px;
+        }
+        .cart_txt>.order_but{
+            margin-top: 20px;
+        }
+        .cost{
+            font-weight: 700;
+        }
+        .txt_box{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            border-bottom: 1px solid;
+        }
+
+        .cost,.in_cost>li{
+            display: flex;
+            justify-content: space-between;
+            width: 210px;
+            padding: 5px 0;
+            
+        }
+        .cost p:first-child, .in_cost p:first-child{
+            width: 90px;
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        .cost p:first-child::after,.in_cost p:first-child::after{
+            content: ':';
+            margin-left: 5px;
+        }
+        .in_cost li:last-child{
+            color: #A71C20;
+            font-weight: 600;
+        }
+        .li_check{
+            width: 20px;
+            height: 20px;
+            color: black;
+        }
+        .li_check:focus{
+            color: black;
+        }
+        .order_but a{
+            color: #fff;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+
+            $('.trash').eq(0).click(function(){
+                $('.in_con').eq(0).fadeOut()
+            })
+            $('.trash').eq(1).click(function(){
+                $('.in_con').eq(1).fadeOut()
+            })
+            $('.trash').eq(2).click(function(){
+                $('.in_con').eq(2).fadeOut()
+            })
+
+            
+
+
+
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="./main_index.html" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="./navi.html">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="cont_wrap">
+            <div class="cont_1">
+                <div class="tit">
+                    <p>Cart</p>
+                </div>
+                <div class="con_box">
+                    <div class="in_box">
+                        <ul class="in_con">
+                            <li>
+                                <input type="checkbox" class="li_check" checked>
+                            </li>
+                            <li class="in_img">
+                                <img src="./img/con_img.jpg" alt="">
+                            </li>
+                            <li class="text">
+                                <div class="in_text">
+                                    <p>리차드 남성 드레스 브라운</p>
+                                    <p>260, 1개</p>
+                                    <span>₩188,000</span><span>₩ 94,000</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/trash.png" alt="" class="trash">
+                            </li>
+                        </ul>
+                        <ul class="in_con">
+                            <li>
+                                <input type="checkbox" class="li_check" checked>
+                            </li>
+                            <li class="in_img">
+                                <img src="./img/con_img_2.png" alt="">
+                            </li>
+                            <li class="text">
+                                <div class="in_text">
+                                    <p>리갈 남성 고어택스 201 티롤리안</p>
+                                    <p>260, 1개</p>
+                                    <span>₩375,000</span><span>₩ 300,000</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/trash.png" alt="" class="trash">
+                            </li>
+                        </ul>
+                        <ul class="in_con">
+                            <li>
+                                <input type="checkbox" class="li_check" checked>
+                            </li>
+                            <li class="in_img">
+                                <img src="./img/con_img_3.png" alt="">
+                            </li>
+                            <li class="text">
+                                <div class="in_text">
+                                    <p>헤리티지리갈 남성 와이팁</p>
+                                    <p>260, 1개</p>
+                                    <span>₩699,000</span><span>₩ 559,200</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/trash.png" alt="" class="trash">
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="cont_2">
+                <div class="cart_txt">
+                    <div class="txt_box">
+                        <ul class="in_cost">
+                            <li>
+                                <p>상품 수량 </p>
+                                <p>3개</p>
+                            </li>
+                            <li>
+                                <p>총 금액 </p>
+                                <p>1,262,000원</p>
+                            </li>
+                            <li>
+                                <p>할인 </p>
+                                <p>308,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cost">
+                        <p>결제금액 </p>
+                        <p>953,200원</p>
+                    </div>
+                    <div class="order_but">
+                        <a href="./payment.html">
+                            <p>주문하기</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

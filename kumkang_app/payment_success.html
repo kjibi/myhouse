@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    
+    <style>
+        .cont{
+            height: calc(100% - 60px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+            align-items: center;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        .tit{
+            width: 100%;
+            text-align: start;
+            font-size: 50px;
+            filter: drop-shadow(1px 1px 1px #9A2828);
+            margin-left: 0;
+        }
+        .txt{
+            width: 100%;
+            text-align: center;
+        }
+        .txt>img{
+            width: 80px;
+        }
+        .txt>p:nth-child(2){
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .txt>p{
+            font-size: 30px;
+            margin: 10px 0;
+        }
+        .order_but a{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="./navi.html">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="cont">
+            <div class="tit">
+                <p>Payment</p>
+            </div>
+            <div class="txt">
+                <img src="./img/clap.svg" alt="">
+                <p>결제완료</p>
+                <p>구매해 주셔서 감사합니다.</p>
+            </div>
+            <div class="order_but">
+                <a href="./category.html">다른 상품 둘러보기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

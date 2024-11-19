@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .wrap{
+            overflow: auto;
+        }
+        .cont{
+            width: 100%;
+        }
+        .tit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px
+        }
+        .txt{
+            font-size: 40px;
+            filter: drop-shadow(1px 1px 0px #9A2828);
+        }
+        .cont_box{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .cont_box a{
+            width: 45%;
+            height: 100%;
+        }
+        .in_cont{
+            width: 100%;
+            height: 100%;
+        }
+        .in_txt{
+            font-size: 20px;
+            color: #A71C20;
+            font-weight: 700;
+        }
+        .banner_wrap{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .swiper {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .but{
+            color: black;
+            opacity: 0.6;
+        }
+        .swiper-pagination-bullet{
+            border: 1px solid;
+            background-color: #fff;
+            opacity: 0.6;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #9A2828;
+            border: 1px solid;
+            opacity: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="./navi.html">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="banner_wrap">
+            <div class="banner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./img/banner_.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/banner_2_.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/banner_3_.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/banner_4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next but"></div>
+                    <div class="swiper-button-prev but"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    autoplay:true,
+                    });
+                </script>  
+            </div>
+        </div>        
+        <div class="cont">
+            <div class="tit">
+                <h2 class="txt">Categories</h2>
+            </div>
+            <div class="cont_box box_12">
+                <a href="./main_index.html">
+                    <div class="in_cont">
+                        <img src="./img/in_cont.png" alt="">
+                        <p class="in_txt">MEN</p>
+                    </div>
+                </a>
+                <a href="./main_index.html">
+                    <div class="in_cont">
+                        <img src="./img/in_cont2.png" alt="">
+                        <p class="in_txt">WOMEN</p>
+                    </div>  
+                </a>
+                
+            </div>
+            <div class="cont_box box_34">
+                <a href="./main_index.html">
+                    <div class="in_cont">
+                        <img src="./img/in_cont3.png" alt="">
+                        <p class="in_txt">BAG</p>
+                    </div>  
+                </a>
+                
+                <a href="./main_index.html">
+                    <div class="in_cont">
+                        <img src="./img/in_cont4.png" alt="">
+                        <p class="in_txt">ACC</p>
+                    </div>  
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

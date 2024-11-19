@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .wrap{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .my_bg{
+            width: 100%;
+            max-width: 580px;
+            min-width: 440px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            min-width: 440px;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .cont_tit{
+
+        }
+        .title{
+            width: 100%;
+            text-align: start;
+            font-size: 50px;
+            filter: drop-shadow(1px 1px 1px #fff);
+            line-height: 0.8;
+            position: absolute;
+            left: 25px;
+            top: 85px;
+        }
+        .in_con{
+            padding: 100px 25px 10px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .con_wrap{
+            display: flex;
+            justify-content: space-around;
+        }
+        .con_wrap img{
+            width: fit-content;
+            object-fit: contain;
+        }
+        .point,.coupon,.grade{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .con_wrap p{
+            color: #fff;
+            /* font-size: 16px; */
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .grade p{
+            position: relative;
+            left: -38px;
+        }
+        .grade>img{
+            object-fit: cover;
+        }
+        .grade span{
+            color: darkgray;
+            font-size: 25px;
+            position: absolute;
+            /* top: 0; */
+            left: 62px;
+            width: 100%;
+            white-space: nowrap;
+            bottom: 0px;
+        }
+
+        .cont{
+            padding-top: 70px;
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .in_cont>div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .in_cont h1{
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .in_cont p{
+            font-size: 20px;
+        }
+        .in_cont img{
+            width: fit-content;
+        }
+        .cont_top{
+            margin-bottom: 65px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="./main_index.html" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="./navi.html">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="cont_tit">
+            <h1 class="title">My Page</h1>
+            <div class="in_con">
+                <ul class="con_wrap">
+                    <li class="point">
+                        <img src="./img/point.png" alt="">
+                        <p>적립금 <span>-</span></p>
+                    </li>
+                    <li class="coupon">
+                        <img src="./img/coupon.png" alt="">
+                        <p>쿠폰 <span>-</span></p>
+                    </li>
+                    <li class="grade">
+                        <img src="./img/grade.png" alt="">
+                        <p>회원등급 <span>비회원</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="in_cont">
+                <div class="cont_top">
+                    <img src="./img/order.png" alt="">
+                    <h1>주문배송 조회</h1>
+                    <p>주문하신 상품내역을<br>
+                        확인하실 수 있습니다.</p>
+                </div>
+                <div class="cont_bottom">
+                    <img src="./img/cancle.png" alt="">
+                    <h1>취소반품</h1>
+                    <p>취소/반품하신 상품내역을<br>
+                        확인하실 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="my_bg">
+            <img src="./img/mypage_bg.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

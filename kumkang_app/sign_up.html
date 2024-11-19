@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        /* .main_header{
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        .menu{
+            padding: 0 20px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu>.logo{
+            width: 110px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+        }
+        .menu a:first-child{
+            width: 20px;
+            height: 12px;
+        } */
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner{
+            height: auto;
+            margin-bottom: 3em;
+            max-width: 600px;
+        }
+        .cont{
+            width: 100%;
+            /* height: 100%; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cont_top{
+            padding: 0 10em;
+            text-align: center;
+        }
+        .tit{
+            margin-bottom: 1em;
+            font-size: 3.5em;
+        }
+        .sns_box{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .cont_top img{
+            width: 290px;
+            height: 50px;
+            margin-bottom: 1.5em;
+        }
+        .cont_bottom{
+            width: 100%;
+            height: 100%;
+            padding: 4em;
+            box-sizing: border-box;
+        }
+        .text_con{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .text_con>p{
+            width: 340px;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 8px 15px;
+            background-color: white;
+            margin-bottom: 5px;
+            color: #A71C20;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+        .text_con span{
+            display: block;
+            width: 100px;
+        }
+        .txt{
+            display: flex;
+        }
+        #txt{
+            width: calc(100% - 100px);
+        }
+        .button{
+            width: 340px;
+            height: 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #A71C20;
+            margin: 0 auto;
+            margin-top: 2.5em;
+
+        }
+        .but{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            
+        }
+        input{
+            border: 0;
+            height: 20px;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="banner">
+            <img src="./img/welcome_event.png" alt="">
+        </div>
+        <div class="cont">
+            <div class="cont_top">
+                <h1 class="tit">회원가입</h1>
+                <div class="sns_box">
+                    <a href="./login.html">
+                        <img src="./img/naver_sign.png" alt="">
+                    </a>
+                    <a href="./login.html">
+                        <img src="./img/kakao_sign.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="cont_bottom">
+                <div class="text_con">
+                    <p class="txt"><span>아이디</span><input type="text" name="" id="txt"></p>
+                    <p class="txt"><span>비밀번호</span><input type="password" name="" id="txt"></p>
+                    <p class="txt"><span>비밀번호 확인</span><input type="password" name="" id="txt"></p>
+                    <p class="txt"><span>이름</span><input type="text" name="" id="txt"></p>
+                    <p class="txt"><span>휴대폰번호</span><input type="number" name="" id="txt"></p>
+                    <p class="txt"><span>이메일</span><input type="email" name="" id="txt"></p>
+                </div>
+                <div class="button">
+                    <a href="./login.html">
+                        <p class="but">가입하기</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

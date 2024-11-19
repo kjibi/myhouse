@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.con_box').click(function(){
+            $('.con_img').css({
+                filter: 'contrast(0.1) opacity(0.5)'
+            })
+            $('.con_img',this).css({
+                filter:'none'
+            })
+        })
+
+
+
+        })//끝
+    </script>
+    <style>
+        .wrap{
+            overflow: auto;
+        }
+        .cont{
+            height: calc(100% - 60px);
+            padding: 25px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+        }
+        .tit{
+            width: 100%;
+            text-align: start;
+            font-size: 50px;
+            filter: drop-shadow(1px 1px 1px #9A2828);
+            margin-left: 0;
+        }
+        .con_wrap{
+            width: 100%;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+        .con_box{
+            width: 100%;
+            height: 85px;
+            border: 1px solid;
+            border-radius: 15px;
+            box-sizing: border-box;
+            background-color: #fff;
+            margin-top: 25px;
+            font-size: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .con_img{
+            width: 30px;
+            height: 25px;
+            object-fit: contain;
+            position: absolute;
+            right: 30px;
+            filter: contrast(0.1) opacity(0.5);
+        }
+        .activ{
+            filter:'none'
+        }
+        .con_img.activ{
+            filter:'none'
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="./main_index.html" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="./navi.html">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="cont">
+            <div class="tit">
+                <p>Payment</p>
+            </div>
+            <div class="con_wrap">
+                <div class="con_box">
+                    <span>신용카드 결제</span>
+                    <img src="./img/checked.png" alt="" class="con_img">
+                </div>
+                <div class="con_box">
+                    <span>간편 결제</span>
+                    <img src="./img/checked.png" alt="" class="con_img">
+                </div>
+                <div class="con_box">
+                    <span>휴대폰 결제</span>
+                    <img src="./img/checked.png" alt="" class="con_img">
+                </div>
+                <div class="con_box">
+                    <span>계좌이체</span>
+                    <img src="./img/checked.png" alt="" class="con_img">
+                </div>
+            </div>
+            <a href="./payment_success.html">
+                <div class="order_but">결제</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

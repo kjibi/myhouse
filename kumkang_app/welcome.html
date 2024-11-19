@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .wrap{
+            width: 100%;
+            height: 100vh;
+            /* 440*956 */
+            /* 956/440*100=약 217% */
+            display: flex;
+            padding-top: 130px;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: center;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        .text_con,.banner{
+            width: 100%; 
+            text-align: center;
+        }
+        /* .logo{
+            
+        } */
+        .text_con{
+            width: 100%;
+            /* height: 30%; */
+            /* 280/956*100=29% */
+            padding:40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .tit{
+            font-size: 20px;
+        }
+        .text_con p{
+            margin-top: 70px;
+        }
+        .txt{
+            font-size: 16px;
+            padding: 0 70px;
+        }
+        .button{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 340px;
+            height: 70px;
+            border-radius: 10px;
+            background-color: #A71C20;
+            color: #fff;
+            font-size: 2.2em;
+            cursor: pointer;
+        }
+        .banner{
+            width: 100%;
+            height: 142px;
+            max-width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="text_con">
+            <h1 class="tit">금강제화 몰에 오신것을 환영합니다.</h1>
+            <p class="txt">정장 구두, 캐주얼화, 컴포트 슈즈, 
+            아웃도어, 골프 의류 등 금강제화의 다양한 소식을 만나보세요.</p>
+            <a href="./login.html">
+                <p class="button">시작하기</p>
+            </a>
+        </div>
+        <div class="banner">
+            <img src="./img/welcome_event.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

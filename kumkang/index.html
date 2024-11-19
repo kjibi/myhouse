@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/pc.css" type="text/css" rel="stylesheet">
+    <link href="./css/note.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <link href="./css/general-sans.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.mousewheel.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="main_menu">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <div class="menu_box">
+                    <div class="top_menu on">
+                        <a href="#">MEN</a>
+                        <div class="sub_menu">
+                            <a href="#">드레스</a>
+                            <a href="#">캐쥬얼</a>
+                            <a href="#">고어텍스</a>
+                            <a href="#">로퍼</a>
+                            <a href="#">스니커즈</a>
+                            <a href="#">부츠</a>
+                            <a href="#">키높이</a>
+                            <a href="#">광폭</a>
+                            <a href="#">골프화</a>
+                            <a href="#">등산화</a>
+                        </div>
+                    </div>
+                    <div class="top_menu on">
+                        <a href="">WOMEN</a>
+                        <div class="sub_menu">
+                            <a href="#">드레스</a>
+                            <a href="#">캐쥬얼</a>
+                            <a href="#">로퍼</a>
+                            <a href="#">부츠</a>
+                            <a href="#">스니커즈</a>
+                            <a href="#">고어텍스</a>
+                            <a href="#">레저화</a>
+                        </div>
+                    </div>
+                    <div class="top_menu on">
+                        <a href="">BAG</a>
+                        <div class="sub_menu">
+                            <a href="#">토트백</a>
+                            <a href="#">숄더백</a>
+                            <a href="#">백팩</a>
+                            <a href="#">서류가방</a>
+                            <a href="#">클러치백</a>
+                            <a href="#">크로스백</a>
+                        </div>
+                    </div>
+                    <div class="top_menu on">
+                        <a href="">ACCESSORY</a>
+                        <div class="sub_menu">
+                            <a href="#">장지갑</a>
+                            <a href="#">중지갑</a>
+                            <a href="#">반지갑</a>
+                            <a href="#">카드지갑</a>
+                            <a href="#">골프지갑</a>
+                            <a href="#">벨트</a>
+                            <a href="#">양말</a>
+                            <a href="#">케어용품</a>
+                            <a href="#">파우치</a>
+                            <a href="#">러기지택</a>
+                        </div>
+                    </div>
+                    <div class="top_menu">
+                        <a href="">SALE</a>
+                    </div>
+                    <div class="top_menu">
+                        <a href="">ONLINE ONLY</a>
+                    </div>
+                    <div class="head_bg"></div>
+                </div>
+                <div class="icon_box">
+                    <a href="#">
+                        <img src="./img/search_ic.png" alt="">
+                    </a>
+                    <a href="#">
+                        JOIN
+                    </a>
+                    <a href="#">
+                        LOGIN
+                    </a>
+                    <a href="#">
+                        MY PAGE
+                    </a>
+                    <a href="#">
+                        CART
+                    </a>
+                </div>
+            </nav>
+              
+            <div class="swiper mySwiper main_banner">
+                <div class="swiper-wrapper img_box">
+                    <div class="swiper-slide">
+                        <img src="./img/banner_main.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner_main_2_.jpg" alt=""> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner_main_2.jpg" alt="">  
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner_main_3.jpg" alt="">  
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner_main_4.jpg" alt="">  
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner_main_5.jpg" alt="">  
+                    </div>
+                </div>
+                    <div class="swiper-button-next but"></div>
+                    <div class="swiper-button-prev but"></div>
+                    <div class="swiper-pagination dot"></div>
+            </div>
+        
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                    autoplay: true,
+                    autoplay:{
+                        delay:5000
+                    },
+                    speed:500
+                });
+                </script>
+                
+            <div class="member_box">
+                <div class="member_left">
+                    <!-- <p>금강몰 멤버쉽</p>
+                    <span>구매할수록 커지는 혜택</span> -->
+                </div>
+                <div class="member_right">
+                    <!-- <p>WELCOME KUMKANG MALL</p>
+                    <span>신규회원을 위한 특별한 혜택</span> -->
+                </div>
+            </div>
+        </header>
+
+        <section class="page_best">
+            <div class="best_tit">
+                <h1>NEW & HOT PICK</h1>
+            </div>
+            <div class="main_cont">
+                <div class="swiper mySwiper left_box">
+                    <div class="swiper-wrapper brand_box">
+                        <div class="swiper-slide">
+                            <img src="./img/heritage_brand.jpg" alt="brand">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/regal_brand.jpg" alt="brand">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/landrover_brand.jpg" alt="brand">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/biosof_brand.jpg" alt="brand">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/esprendor_brand.jpg" alt="brand">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/renois_brand.png" alt="brand">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next but"></div>
+                    <div class="swiper-button-prev but"></div>
+                    <div class="swiper-pagination dot"></div>
+                    <div class="brand_bg">
+                        <h2>KUMKANG</h2>
+                        <p>BEST BRAND</p>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        },
+                        navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                        },
+                        autoplay: true,
+                        autoplay:{
+                            delay:3000
+                        },
+                        speed:500
+                    });
+                </script>
+                <div class="right_box">
+                    <div class="new_box">
+                        <a href="#">
+                            <div class="new">
+                                <div class="img_box">
+                                    <img src="./img/new_1.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>헤리티지 남성 드레스</h4>
+                                    <span>천연소가죽/화이트/3cm</span>
+                                    <div class="in_txt">
+                                        <p>405,000</p><span>450,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="new">
+                                <div class="img_box">
+                                    <img src="./img/new_2.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>헤리티지 남성 드레스</h4>
+                                    <span>천연소가죽/화이트/3cm</span>
+                                    <div class="in_txt">
+                                        <p>449,100</p><span>499,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="new">
+                                <div class="img_box">
+                                    <img src="./img/new_3 (2).jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>랜드로바 여성 부츠</h4>
+                                    <span>천연염소가죽/브라운/4cm</span>
+                                    <div class="in_txt">
+                                        <p>304,200</p><span>338,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="new">
+                                <div class="img_box">
+                                    <img src="./img/new_4 (2).jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>르느와르 여성 부츠</h4>
+                                    <span>천연소가죽/와인/6.5cm</span>
+                                    <div class="in_txt">
+                                        <p>322,200</p><span>358,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        
+                        <p class="title">New Pick</p>
+                    </div>
+                    <div class="hot_box">
+                        <a href="#">
+                            <div class="hot">
+                                <div class="img_box">
+                                    <img src="./img/hot_1.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>헤리티지 남성 드레스</h4>
+                                    <span>천연송아지가죽/블랙/2.5cm</span>
+                                    <div class="in_txt">
+                                        <p>419,400</p><span>699,000</span><span>40%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hot">
+                                <div class="img_box">
+                                    <img src="./img/hot_2.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>랜드로바 남성 캐쥬얼</h4>
+                                    <span>천연소가죽/브라운/5cm</span>
+                                    <div class="in_txt">
+                                        <p>286,200</p><span>318,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hot">
+                                <div class="img_box">
+                                    <img src="./img/hot_3.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>랜드로바 여성 부츠</h4>
+                                    <span>천연소가죽/브라운/5cm</span>
+                                    <div class="in_txt">
+                                        <p>304,200</p><span>338,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="hot">
+                                <div class="img_box">
+                                    <img src="./img/hot_4.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4>랜드로바 여성 부츠</h4>
+                                    <span>천연소가죽/블랙/3cm</span>
+                                    <div class="in_txt">
+                                        <p>304,200</p><span>338,000</span><span>10%</span>
+                                    </div>
+                                </div>       
+                            </div>
+                        </a>
+                        <p class="title">Hot Pick</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="move_banner">
+            <div class="mask_box">
+                <div class="move_box">
+                    <img src="./img/t_banner_pc.jpg" alt="" class="t_banner">
+                    <img src="./img/t_banner_pc.jpg" alt="" class="t_banner">
+                    <img src="./img/t_banner_pc.jpg" alt="" class="t_banner">
+                    <img src="./img/t_banner_pc.jpg" alt="" class="t_banner">
+                </div>
+            </div>
+        </div>
+
+        <section class="cont_page">
+            <div class="cont_wrap">
+                <div class="cont men">
+                    <a href="#">
+                        <div class="cont_tit">
+                            <h2>MEN</h2>
+                            <span>more »</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/men_1 1.png" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>랜드로바 남성 캐쥬얼</h4>
+                                <span>천연소가죽/블랙/2.5cm</span>
+                                <div class="in_txt">
+                                    <p>286,200</p><span>318,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/men_2.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>랜드로바 남성 캐쥬얼</h4>
+                                <span>천연소가죽/블랙/2cm</span>
+                                <div class="in_txt">
+                                    <p>268,200</p><span>298,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/men_3.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>리갈 남성 키높이</h4>
+                                <span>천연소가죽/블랙/6cm</span>
+                                <div class="in_txt">
+                                    <p>304,200</p><span>338,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/men_4.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>리갈 남성 광폭</h4>
+                                <span>천연소가죽/블랙/3.5cm</span>
+                                <div class="in_txt">
+                                    <p>268,200</p><span>298,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/men_5.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>바이오소프 남성 드레스</h4>
+                                <span>천연소가죽/블랙/3.5cm</span>
+                                <div class="in_txt">
+                                    <p>268,200</p><span>298,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cont women">
+                    <a href="#">
+                        <div class="cont_tit">
+                            <h2>WOMEN</h2>
+                            <span>more »</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/women_1.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 여성 드레스</h4>
+                                <span>천연양가죽/블랙/3.5cm</span>
+                                <div class="in_txt">
+                                    <p>268,200</p><span>298,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/women_2.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>랜드로바 여성 드레스</h4>
+                                <span>천연양가죽/블랙/5cm</span>
+                                <div class="in_txt">
+                                    <p>250,200</p><span>278,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/women_3.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>랜드로바 여성 캐주얼</h4>
+                                <span>천연염소가죽/베이지/3.5cm</span>
+                                <div class="in_txt">
+                                    <p>250,200</p><span>278,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/women_4.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>랜드로바 여성 캐주얼</h4>
+                                <span>천연염소가죽/네이비/3cm</span>
+                                <div class="in_txt">
+                                    <p>250,200</p><span>278,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/women_5.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 여성 드레스</h4>
+                                <span>천연양가죽/블랙/6cm</span>
+                                <div class="in_txt">
+                                    <p>226,200</p><span>318,000</span><span>30%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                </div>
+                <div class="cont bag">
+                    <a href="#">
+                        <div class="cont_tit">
+                            <h2>BAG</h2>
+                            <span>more »</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/bag_1.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>리갈 남성 서류가방</h4>
+                                <span>천연소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>295,200</p><span>328,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/bag_2.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 여성 토트백</h4>
+                                <span>천연소가죽/블랙/베이지</span>
+                                <div class="in_txt">
+                                    <p>295,200</p><span>328,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/bag_3.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 여성 토트백</h4>
+                                <span>천연소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>385,200</p><span>428,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/bag_4.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 클러치백</h4>
+                                <span>천연소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>229,600</p><span>328,000</span><span>30%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/bag_5.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>리갈 남성 서류가방</h4>
+                                <span>천연소가죽/브라운</span>
+                                <div class="in_txt">
+                                    <p>295,200</p><span>328,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                </div>
+                <div class="cont accessory">
+                    <a href="#">
+                        <div class="cont_tit">
+                            <h2>ACCESSORY</h2>
+                            <span>more »</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/acc_1.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>리갈 남성 벨트</h4>
+                                <span>소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>115,200</p><span>128,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/acc_2.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 여성 장지갑</h4>
+                                <span>소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>250,200</p><span>278,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/acc_3.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>르느와르 여성 카드지갑</h4>
+                                <span>소가죽/레드</span>
+                                <div class="in_txt">
+                                    <p>115,200</p><span>128,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/acc_4.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>리갈 남성 반지갑</h4>
+                                <span>소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>160,200</p><span>178,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/acc_5.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>오르바 남성 반지갑</h4>
+                                <span>소가죽/블랙</span>
+                                <div class="in_txt">
+                                    <p>115,200</p><span>128,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                </div>
+                <div class="cont care">
+                    <a href="#">
+                        <div class="cont_tit">
+                            <h2>CARE</h2>
+                            <span>more »</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/care_1.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>금강 케어용품</h4>
+                                <span>왁스,유기용제/무색</span>
+                                <div class="in_txt">
+                                    <p>9,000</p><span>10,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/care_2.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>금강 케어용품</h4>
+                                <span>말털/무색</span>
+                                <div class="in_txt">
+                                    <p>6,300</p><span>7,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/care_3.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>금강 케어용품</h4>
+                                <span>약품/블랙</span>
+                                <div class="in_txt">
+                                    <p>13,500</p><span>15,000</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/care_4.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>금강 남성 케어용품</h4>
+                                <span>왁스,유기용제/무색</span>
+                                <div class="in_txt">
+                                    <p>7,000</p><span>6,300</span><span>10%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="in_cont">
+                            <div class="img_box">
+                                <img src="./img/care_5.jpg" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <h4>금강 케어용품</h4>
+                                <span>인조가죽/극세사/무색</span>
+                                <div class="in_txt">
+                                    <p>5,600</p><span>8,000</span><span>30%</span>
+                                </div>
+                            </div>       
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="model_page">
+            <div class="tit">
+                <h2>STYLE PICK</h2>
+            </div>
+            <div class="model_box">
+                <div class="model_con">
+                    <div class="model_img">
+                        <img src="./img/model_1.png" alt="">
+                    </div>
+                    <div class="in_con">
+                        <div class="item_img">
+                            <img src="./img/model_i3.jpg" alt="" class="model_item">
+                        </div>
+                        <div class="item_txt">
+                            <p>헤리티지 남성 드레스</p>
+                            <div class="in_txt">
+                                <p>699,000</p><span>419,400</span><span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model_con">
+                    <div class="model_img">
+                        <img src="./img/model_2.png" alt="">
+                    </div>
+                    <div class="in_con">
+                        <div class="item_img">
+                            <img src="./img/model_i2.jpg" alt="" class="model_item">
+                        </div>
+                        <div class="item_txt">
+                            <p>르느와르 여성 드레스</p>
+                            <div class="in_txt">
+                                <p>318,000</p><span>286,000</span><span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model_con">
+                    <div class="model_img">
+                        <img src="./img/model_5.png" alt="">
+                    </div>
+                    <div class="in_con">
+                        <div class="item_img">
+                            <img src="./img/model_i.jpg" alt="" class="model_item">
+                        </div>
+                        <div class="item_txt">
+                            <p>랜드로바 남성 스니커즈</p>
+                            <div class="in_txt">
+                                <p>405,000</p><span>450,000</span><span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model_con">
+                    <div class="model_img">
+                        <img src="./img/model_3.png" alt="">
+                    </div>
+                    <div class="in_con">
+                        <div class="item_img">
+                            <img src="./img/model_i4.jpg" alt="" class="model_item">
+                        </div>
+                        <div class="item_txt">
+                            <p>르느와르 여성 스퀘어 장식 펌프스</p>
+                            <div class="in_txt">
+                                <p>318,000</p><span>286,200</span><span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model_con">
+                    <div class="model_img">
+                        <img src="./img/model_4.png" alt="">
+                    </div>
+                    <div class="in_con">
+                        <div class="item_img">
+                            <img src="./img/model_i.jpg" alt="" class="model_item">
+                        </div>
+                        <div class="item_txt">
+                            <p>랜드로바 남성 스니커즈</p>
+                            <div class="in_txt">
+                                <p>405,000</p><span>450,000</span><span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sns_page">
+            <div class="tit">
+                <h2>#KUMKANG</h2>
+            </div>
+            <div class="swiper snsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/insta2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta6.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta7.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta6.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/insta7.png">
+                    </div>
+                </div> 
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                const progressCircle = document.querySelector(".autoplay-progress svg");
+                const progressContent = document.querySelector(".autoplay-progress span");
+                var swiper = new Swiper(".snsSwiper", {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                loop:true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                on: {
+                    autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    // progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                    }
+                },
+                speed:500,
+                centeredSlides: true,
+                effect: "coverflow",
+                coverflowEffect: {
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1.4,
+                        slideShadows: false,
+                    },
+                });
+            </script>
+        </section>
+        <div class="event_banner">
+            <a href="#">
+                <img src="./img/event_banner.png" alt="">
+            </a>
+        </div>
+        <footer class="main_footer">
+            <div class="foot_top">
+                <div class="left_foot">
+                    <div class="notice_box">
+                        <div class="notice_tit">
+                            <a href="#" class="hover">공지사항</a>
+                            <a href="#">NEWS</a>
+                            <div>
+                                <a href="#" target="_blank" class="more"></a>
+                            </div>
+                        </div>
+                        <ul class="notice active">
+                            <li>
+                                <a href="#">※2024 추석 연휴 배송지연 공지※</a> 
+                                <span class="date">2024.09.11</span>
+                            </li>
+                            <li>
+                                <a href="#">※2024 설 연휴 배송지연 공지※</a>
+                                <span class="date">2024.01.30</span>
+                            </li>
+                            <li>
+                                <a href="#">휴면해제 처리예정 안내</a>
+                                <span class="date">2023.12.13</span>
+                            </li>
+                            <li>
+                                <a href="#">[종료된이벤트]11월 세일 리뷰이벤트 당첨자 발표</a>
+                                <span class="date">2023.12.06</span>
+                            </li>
+                            <li>
+                                <a href="#">※추석 연휴 배송지연 공지※</a>
+                                <span class="date">2023.09.15</span>
+                            </li>
+                        </ul>
+                        <ul class="notice news">
+                            <li>
+                                <a href="#">[한국경제] 금강제화, '보석 스트랩 메리제인' 여성화 등 정기 세일</a> 
+                                <span class="date">2024.03.27</span>
+                            </li>
+                            <li>
+                                <a href="#">[매일경제] 금강제화, 미니멀 스타일에 클래식 감성 담은 겨울부츠</a>
+                                <span class="date">2023.11.22</span>
+                            </li>
+                            <li>
+                                <a href="#">[뉴시스] 금강제화 명동본점, 프리미엄 매장으로 재단장</a>
+                                <span class="date">2023.10.27</span>
+                            </li>
+                            <li>
+                                <a href="#">[아시아경제] 금강제화 '헤리티지'…"한국인 발에 가장 잘 맞는 구두"</a>
+                                <span class="date">2023.01.26</span>
+                            </li>
+                            <li>
+                                <a href="#">[연합뉴스] 금강제화,양말업체 '금강텍스'에 상표권 분쟁 최종승소</a>
+                                <span class="date">2022.11.25</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="right_foot">
+                    <div class="service">
+                        <div class="sv_tit">
+                            <span>고객센터</span>
+                            <span>1644-9247</span>
+                        </div>
+                        <div class="sv_txt">
+                            <p>운영시간 : 평일 09:00~17:00 (점심시간 : 12:00~13:00)</p>
+                        </div>
+                        <div class="box_wrap">
+                            <div class="left_but">
+                                <a href="#">FAQ</a>
+                                <a href="#">1:1문의</a>
+                            </div>
+                            <div class="right_but">
+                                <div class="sns_img">
+                                    <a href="#">
+                                        <img src="./img/sns_ic01.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/sns_ic02.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/sns_ic03.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_bottom">
+                <div class="foot_menu">
+                    <div class="text_box">
+                        <a href="#">
+                            <p>회사소개</p>
+                        </a>
+                        <a href="#">
+                            <p>매장안내</p>
+                        </a>
+                        <a href="#">
+                            <p>대리점개설</p>
+                        </a>
+                        <a href="#">
+                            <p>주문조회</p>
+                        </a>
+                        <a href="#">
+                            <p>반품안내</p>
+                        </a>
+                        <a href="#">
+                            <p>수선안내</p>
+                        </a>
+                        <a href="#">
+                            <p>이용약관</p>
+                        </a>
+                        <a href="#">
+                            <p>개인정보처리방침</p>
+                        </a>
+                        <a href="#">
+                            <p>고객센터</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="text_left">
+                        <p>상호 : ㈜금강 | 대표 : 신기은, 이화진 | 전화 : 1644-9247 | 개인정보보호책임자 : 오진성 jsoh@kumkang.com</p>
+                        <p>주소 : 세종특별자치시 전동면 노장공단길 59 | 사업자등록번호 : 122-81-04585 [사업자정보확인] | 통신판매업신고번호 : 2019-세종조치원-0126 | 호스팅 제공자 : ㈜가비아</p>
+                        <p>2013 KUMKANG ALL right Reserved.</p>
+                    </div>
+                    <div class="text_right">
+                        <p>소비자피해보상보험</p>
+                        <p>고객님은 안전거래를 위해 결제 시, 금강제화 에서 가입한</p>
+                        <p>소비자피해보상보험 서비스를 이용하실 수 있습니다.</p>
+                        <div class="in_text">
+                            <span>보상대상 : 미배송/반품, 환불거부/쇼핑몰부도</span><span><a href="#">서비스 가입사실 확인</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

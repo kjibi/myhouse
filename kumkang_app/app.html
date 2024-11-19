@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        body{
+            background-color: black;
+        }
+        .app{
+            width: 100%;
+            height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            background-image: url(./img/mobile.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .icon{
+            width: 130px;
+            height: 130px;
+            border-radius: 25%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F6F6E0;
+            filter: drop-shadow(2px 2px 2px gray);
+            position: relative;
+        }   
+        .icon img{
+            width: 90%;
+            object-fit: contain;
+        }
+        .app p{
+            text-align: center;
+            position: absolute;
+            bottom: -28px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <a href="./welcome.html">
+            <div class="icon">
+                <img src="./img/logo.png" alt="">
+                <p>금강제화 몰</p>
+            </div>
+        </a>
+       
+    </div>
+</body>
+</html>

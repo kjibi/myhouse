@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/mo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+        .main_img{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+        .title{
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+        }
+        .img_box{
+            width: 387px;
+            height: 300px;
+            position: relative;
+            border: 1px solid;
+            filter: drop-shadow(1px 1px 0px black);
+        }
+        .img_box img{
+            width: 100%;
+            height: 300px;
+        }
+        .in_but{
+            width: 65px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+        }
+        .in_but img{
+            width: 16px;
+            height: 16px;
+        }
+        .main_txt{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+        }
+        .con_tit{
+            width: 100%;
+            text-align: center;
+            padding: 7px;
+        }
+        .txt_con{
+            width: 100%;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            box-sizing: border-box;
+            margin: 0 25px;
+            align-items: center;
+            padding: 15px;
+        }
+        .cost{
+            font-size: 18px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+        .cost:first-child{
+            color: gray;
+        }
+        .cost span:first-child{
+            text-decoration: line-through;
+            margin: 0 5px;
+        }
+        .cost span:last-child{
+            color: #A71C20;
+        }
+
+        .but_wrap{
+            width: 100%;
+            padding: 0 25px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sel_but{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .but_left, .but_right{
+            width: 150px;
+            height: 40px;
+            border: 1px solid #9A2828;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            align-items: center;
+            padding: 0px 15px;
+        }
+        .sel_but img{
+            width: 18px;
+            height: 10px;
+        }
+        .order_but{
+            width: 350px;
+            height: 86px;
+            text-align: center;
+            color: #fff;
+            background-color: #A71C20;
+            border-radius: 10px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 60px auto 30px;
+        }
+        .in_sel{
+            position: absolute;
+            left: 0;
+            top: 40px;
+            border: 1px solid #9A2828;
+            width: 100%;
+            border-radius: 15px;
+            z-index: 1;
+            background-color: #fff;
+            padding: 5px;
+            box-sizing: border-box;
+            display: none;
+            height: 125px;
+            overflow-y: auto;
+            
+        }
+        .in_sel li{
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 5px;
+            border-radius: 25px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            
+        }
+        /* .but_left:hover .in_sel{
+            opacity: 1;
+            transition: 0.3s;
+        }
+        .but_right:hover .in_sel{
+            opacity: 1;
+            transition: 0.3s;
+        } */
+        .in_sel li:hover{
+            background-color: lightgoldenrodyellow;
+        }
+        .but{
+            position: relative;
+        }
+        .order_but a{
+            color: #fff;
+        }
+        .in_sel.on{
+            display: block;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+
+            let bg_n=$('.bg').index();
+            bg_n=0;
+            $('.in_but a').eq(0).click(function(){
+                bg_n--;
+                if(bg_n<=0){
+                    bg_n=0;
+                }
+                $('.bg').removeClass('on');
+                $('.bg').eq(bg_n).addClass('on');
+            })
+            $('.in_but a').eq(1).click(function(){
+                bg_n++;
+                if(bg_n>4){
+                    bg_n=4;
+                }
+                $('.bg').removeClass('on');
+                $('.bg').eq(bg_n).addClass('on');
+            })
+
+
+            $('.but').click(function(){
+                $('.in_sel',this).toggleClass('on')
+            })
+
+            $('.but_left>.in_sel>li').click(function(){
+                let txt=$(this).text();
+                 console.log(txt);
+                $('.but_left span').text(txt);
+            })
+            $('.but_right>.in_sel>li').click(function(){
+                let txt=$(this).text();
+                $('.but_right span').text(txt)
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header">
+            <nav class="menu">
+                <a href="./main_index.html" class="logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <a href="./navi.html">
+                    <img src="./img/menu_icon.png" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="main_img">
+            <h1 class="title">리차드 남성 페니 로퍼</h1>
+            <div class="img_box">
+                <img src="./img/con_img.jpg" alt="" class="bg on">
+                <img src="./img/con_img2.png" alt="" class="bg">
+                <img src="./img/con_img3.png" alt="" class="bg">
+                <img src="./img/con_img4.png" alt="" class="bg">
+                <img src="./img/con_img5.png" alt="" class="bg">
+                <div class="in_but">
+                    <a href="#">
+                        <img src="./img/arr_left.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./img/arr_right.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main_txt">
+            <h1 class="con_tit">RICSLC4967MF3</h1>
+            <div class="txt_con">
+                <p class="cost">정상가<span>₩ 188,000</span><span>50%</span></p>
+                <p class="cost">판매가 ₩ 94,000</p>
+            </div>
+        </div>
+        <div class="but_wrap">
+            <div class="sel_but">
+                <div class="but_left but">
+                    <span>사이즈</span>
+                    <img src="./img/Vector.png" alt="">
+                    <ul class="in_sel">
+                        <li>220</li>
+                        <li>230</li>
+                        <li>240</li>
+                        <li>250</li>
+                        <li>260</li>
+                        <li>270</li>
+                        <li>280</li>
+                    </ul>
+                </div>
+                <div class="but_right but">
+                    <span>수량</span>
+                    <img src="./img/Vector.png" alt="">
+                    <ul class="in_sel">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order_but">
+                <a href="./cart.html">
+                    <span>주문하기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        let li=document.querySelector('.but_left>.in_sel>li')
+        li.addEventListener('click',function(){
+            document.getElementById("span").innerHTML(li);
+        })
+        
+       
+    </script> -->
+</body>
+</html>
